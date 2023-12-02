@@ -1,0 +1,175 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: plum;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section {
+    padding: 25px;
+}
+
+table, th, td {
+    border: 1px solid purple;
+    margin: auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+#home {
+    text-align: center;
+}
+
+#home > img {
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+#pendidikan > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+#pendidikan > ul > li > a:hover {
+    color: rgb(0, 0, 0);
+}
+
+#pendidikan, #aktivitas, footer {
+    background-color: plum;
+    color: white;
+}
+
+footer {
+    padding: 20px;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer.top {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer.top > .footer > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+footer.top > .footer > p > a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+footer.top > .footer {
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+.center h3{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+.hub{   
+    position: relative;
+    top: 50px;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+
+}
+.tombol{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: var(--bg-color);
+    margin: 10px;
+    border-radius: 30%;
+    box-sizing: 0 5px 15px -5px #d3090970;
+    overflow: hidden;
+    position: relative;
+    color: var(--main-color);
+}
+.tombol i{
+    transition: 0.2s linear;
+    font-size: 26px;
+    line-height: 90px;
+}
+.tombol:hover i{
+    transform: scale(1.3);
+    color:#fa4545;
+}
+.tombol::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -120px;
+    top: 90%;
+    transform: rotate(45ged);
+    background: #f1f1f1;
+}
+.tombol:hover::before {
+    left: -10px;
+    top: -10px;
+    animation: aaa 0.7s 1;
+}
+@keyframes aaa{
+    0%{
+    left: -110px;
+    top: 90px;
+    }
+    50%{
+        left: -10px;
+        top: -30px;
+        }
+        100%{
+            left: -10px;
+            top: -10px;
+            }
+}
+
+#portofolio 
+> ul > li > a {
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+#portofolio 
+> ul > li > a:hover {
+    color: black;
+}
